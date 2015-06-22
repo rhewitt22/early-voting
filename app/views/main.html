@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1>Early Voting</h1>
+  <h2>Atlanta, Georgia</h2>
+
+  <label>Select a County: 
+    <select ng-model="userCounty" ng-options="county for county in counties" ng-change="setCounty()">
+    </select>
+  </label>
+
+  <p><button ng-click="getLocation()" class="btn btn-lg btn-success" ng-href="#/">Use my location &nbsp;&nbsp;<span class="glyphicon" ng-class="{ 'glyphicon-map-marker': !loading, 'glyphicon-refresh': loading, 'gly-spin': loading}"></span></button></p>
+
+  <p>Download the mobile app.</p>
+</div>
+
+<div class="row marketing">
+
+</div>

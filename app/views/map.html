@@ -1,0 +1,5 @@
+<label class="map-county-select">Select a County: 
+  <select ng-model="userCounty" ng-options="county for county in counties" ng-change="setCounty()">
+  </select>
+</label>
+<leaflet class="leaflet-map" center="center"></leaflet>
